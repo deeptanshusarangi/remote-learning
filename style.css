@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the entire site */
+    background-color: #f0f8ff; /* Light background color */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Better readability */
+    padding: 20px; /* Padding around the body */
+}
+
+header {
+    background: linear-gradient(135deg, #4e8cff, #66b3ff); /* Gradient background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Inline list items */
+    margin-right: 15px; /* Space between links */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+
+main {
+    margin-top: 20px; /* Space above main content */
+}
+
+section {
+    background: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below sections */
+}
+
+h2 {
+    color: #4e8cff; /* Header color */
+    border-bottom: 2px solid #66b3ff; /* Underline effect */
+    padding-bottom: 10px; /* Space below header */
+}
+
+h3 {
+    color: #66b3ff; /* Slightly different color for sub-headers */
+}
+
+ul {
+    list-style-type: square; /* Square bullet points for lists */
+    margin-left: 20px; /* Space on the left */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+footer {
+    margin-top: 20px; /* Space above footer */
+    text-align: center; /* Centered text */
+    color: #666; /* Footer text color */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links vertically on small screens */
+        margin-bottom: 10px; /* Space below links */
+    }
+}
+
+
+
+

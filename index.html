@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Remote Learning for Low Bandwidth Areas</title>
+</head>
+<body>
+    <header>
+        <h1>Remote Learning for Low Bandwidth Areas 📚</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showClasses('maths')">Maths</a></li>
+                <li><a href="#" onclick="showClasses('chemistry')">Chemistry</a></li>
+                <li><a href="#" onclick="showClasses('physics')">Physics</a></li>
+                <li><a href="#" onclick="showClasses('english')">English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="classes"></div>
+
+        <section id="about">
+            <h2>About Our Project</h2>
+            <p>
+                Our project aims to provide quality educational resources to students in low bandwidth areas. 
+                We understand the challenges faced by learners who have limited access to high-speed internet. 
+                Therefore, our platform is designed to be lightweight, ensuring that educational content is easily accessible 
+                and can be used offline.
+            </p>
+        </section>
+
+        <section id="aim">
+            <h2>Aim</h2>
+            <p>
+                The primary aim of our project is to enhance the learning experience for students by offering 
+                downloadable resources and interactive lessons that do not rely heavily on internet connectivity. 
+                We aim to bridge the educational gap by providing high-quality materials that can be accessed 
+                anytime and anywhere.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>🌟 **Lightweight and Fast:** The platform is optimized for low bandwidth usage.</li>
+                <li>📚 **Downloadable Resources:** Students can easily download PDFs for offline use.</li>
+                <li>💻 **Mobile-Friendly:** The website is designed to be responsive and accessible on various devices.</li>
+                <li>🔒 **Secure Access:** All resources are safely stored and can only be accessed via direct links.</li>
+                <li>🌐 **Interactive Lessons:** Engaging lessons that require minimal internet for usage.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        function showClasses(subject) {
+            const classesDiv = document.getElementById("classes");
+            let classOptions = '';
+
+            if (subject === 'maths') {
+                classOptions = `
+                    <h3>Maths Classes:</h3>
+                    <ul>
+                        <li><a href="maths/class6.pdf" target="_blank">Class 6</a></li>
+                        <li><a href="maths/class7.pdf" target="_blank">Class 7</a></li>
+                        <li><a href="maths/class8.pdf" target="_blank">Class 8</a></li>
+                        <li><a href="maths/class9.pdf" target="_blank">Class 9</a></li>
+                        <li><a href="maths/class10.pdf" target="_blank">Class 10</a></li>
+                        <li><a href="maths/class11.pdf" target="_blank">Class 11</a></li>
+                        <li><a href="maths/class12.pdf" target="_blank">Class 12</a></li>
+                    </ul>
+                `;
+            } else if (subject === 'chemistry') {
+                classOptions = `
+                    <h3>Chemistry Classes:</h3>
+                    <ul>
+                        <li><a href="chemistry/class6.pdf" target="_blank">Class 6</a></li>
+                        <li><a href="chemistry/class7.pdf" target="_blank">Class 7</a></li>
+                        <li><a href="chemistry/class8.pdf" target="_blank">Class 8</a></li>
+                        <li><a href="chemistry/class9.pdf" target="_blank">Class 9</a></li>
+                        <li><a href="chemistry/class10.pdf" target="_blank">Class 10</a></li>
+                        <li><a href="chemistry/class11.pdf" target="_blank">Class 11</a></li>
+                        <li><a href="chemistry/class12.pdf" target="_blank">Class 12</a></li>
+                    </ul>
+                `;
+            } else if (subject === 'physics') {
+                classOptions = `
+                    <h3>Physics Classes:</h3>
+                    <ul>
+                        <li><a href="physics/class6.pdf" target="_blank">Class 6</a></li>
+                        <li><a href="physics/class7.pdf" target="_blank">Class 7</a></li>
+                        <li><a href="physics/class8.pdf" target="_blank">Class 8</a></li>
+                        <li><a href="physics/class9.pdf" target="_blank">Class 9</a></li>
+                        <li><a href="physics/class10.pdf" target="_blank">Class 10</a></li>
+                        <li><a href="physics/class11.pdf" target="_blank">Class 11</a></li>
+                        <li><a href="physics/class12.pdf" target="_blank">Class 12</a></li>
+                    </ul>
+                `;
+            } else if (subject === 'english') {
+                classOptions = `
+                    <h3>English Classes:</h3>
+                    <ul>
+                        <li><a href="english/class6.pdf" target="_blank">Class 6</a></li>
+                        <li><a href="english/class7.pdf" target="_blank">Class 7</a></li>
+                        <li><a href="english/class8.pdf" target="_blank">Class 8</a></li>
+                        <li><a href="english/class9.pdf" target="_blank">Class 9</a></li>
+                        <li><a href="english/class10.pdf" target="_blank">Class 10</a></li>
+                        <li><a href="english/class11.pdf" target="_blank">Class 11</a></li>
+                        <li><a href="english/class12.pdf" target="_blank">Class 12</a></li>
+                    </ul>
+                `;
+            }
+
+            classesDiv.innerHTML = classOptions;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
